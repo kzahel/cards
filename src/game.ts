@@ -142,7 +142,7 @@ export function findFirstSet(cards: Card[]): Card[] | null {
 }
 
 export function getCardAsset(card: Card): string {
-  return `/legacy/set/images/${card.shape}_${card.color}_${card.fill}.png`;
+  return `${import.meta.env.BASE_URL}legacy/set/images/${card.shape}_${card.color}_${card.fill}.png`;
 }
 
 export function createPlayers(playerCount: number): PlayerState[] {

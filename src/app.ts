@@ -52,8 +52,8 @@ export class SetApp {
   private readonly root: HTMLElement;
 
   private readonly sounds = {
-    good: new Audio("/legacy/set/sounds/good.wav"),
-    bad: new Audio("/legacy/set/sounds/bad.wav"),
+    good: new Audio(`${import.meta.env.BASE_URL}legacy/set/sounds/good.wav`),
+    bad: new Audio(`${import.meta.env.BASE_URL}legacy/set/sounds/bad.wav`),
   };
 
   private state: AppState = {
